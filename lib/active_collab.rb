@@ -15,7 +15,7 @@ module ActiveCollab
     include ActiveCollab::API::Users
     include ActiveCollab::API::Categories
 
-  	def initialize(url, api_key)
+  	def initialize(url, api_key = nil)
   		@api_url = url
   		@api_key = api_key
   	end
